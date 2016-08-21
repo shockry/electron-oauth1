@@ -1,0 +1,21 @@
+{
+  "name": "electron-oauth",
+  "version": "1.0.0",
+  "description": "Illustrating a possible OAuth 1.0 flow",
+  "main": "main.js",
+  "scripts": {
+    "start": "node_modules/.bin/electron ."
+  },
+  "keywords": [
+    "electron",
+    "oauth"
+  ],
+  "author": "Shockry",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.3.3"
+  },
+  "dependencies": {
+    "request": "^2.74.0"
+  }
+}
