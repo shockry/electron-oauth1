@@ -18,7 +18,7 @@ function checkToken() {
 
     request.post({url: REQUEST_TOKEN_URL, oauth: oauth}, (e, r, body) => {
       const req_data = querystring.parse(body);
-      getCurrentWindow().loadURL(AUTHORIZE_TOKEN_URL + req_data.oauth_token);
+      document.getElementById('webview').setAttribute("src", AUTHORIZE_TOKEN_URL + req_data.oauth_token);
     });
   }
 }
